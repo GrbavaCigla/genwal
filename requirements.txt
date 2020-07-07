@@ -1,2 +1,2 @@
-cairosvg
 requests
+cairosvg

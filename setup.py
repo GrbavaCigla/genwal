@@ -4,7 +4,7 @@ with open('README.md', 'r') as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name='genwal-GrbavaCigla',
+    name='genwal',
     version='0.0.1',
     author='Aleksa Ognjanovic',
     author_email='alexa.ognjanovic@gmail.com',
