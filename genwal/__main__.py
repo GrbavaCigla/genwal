@@ -33,7 +33,7 @@ replacements = {
 }
 
 response = requests.get("https://raw.githubusercontent.com/GrbavaCigla/genwal/master/wallpaper.svg")
-if response.status_code == 202:
+if response.status_code == 200:
     svg_content = response.text
 
     for k, v in replacements.items():
@@ -44,3 +44,6 @@ if response.status_code == 202:
         write_to="wallpaper.png",
         scale=args.scale,
     )
+else:
+    print("Failed to fetch the wallpaper.svg")
+    os.exit(1)
