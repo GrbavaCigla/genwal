@@ -46,4 +46,4 @@ if response.status_code == 200:
     )
 else:
     print("Failed to fetch the wallpaper.svg")
-    os.exit(1)
+    exit(1)
